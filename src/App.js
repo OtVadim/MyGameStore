@@ -22,6 +22,9 @@ function App() {
             <Route path="/">
               <HomePage />
             </Route>
+            <Route path="/app/:title">
+              <HomePage />
+            </Route>
           </Switch>
         </div>
       </Router>
