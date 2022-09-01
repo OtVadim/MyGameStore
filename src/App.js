@@ -7,8 +7,10 @@ import {
 import { Provider } from "react-redux";
 
 import { HomePage } from './pages/home-page';
+import { GamePage } from './pages/game-page';
 import { Header } from './components/header';
 import { store } from './redux';
+
 
 
 
@@ -23,7 +25,7 @@ function App() {
               <HomePage />
             </Route>
             <Route path="/app/:title">
-              <HomePage />
+              <GamePage />
             </Route>
           </Switch>
         </div>
