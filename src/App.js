@@ -21,10 +21,10 @@ function App() {
         <div className="App">
           <Header/>
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <HomePage />
             </Route>
-            <Route path="/app/:title">
+            <Route exact path="/app/:title">
               <GamePage />
             </Route>
           </Switch>
