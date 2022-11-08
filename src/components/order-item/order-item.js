@@ -9,7 +9,7 @@ export const OrderItem = ({game}) => {
     const dispatch = useDispatch();
 
     const handleClick = () => {
-        dispatch(deleteItemFromCart(game.id))
+        dispatch(deleteItemFromCart(game.id));
     }
 
     return(
@@ -25,7 +25,7 @@ export const OrderItem = ({game}) => {
                 <AiOutlineCloseCircle 
                     size={25}
                     className="cart-item__delete-icon"
-                    onClack={handleClick}
+                    onClick={handleClick}
                 />
             </div>
         </div>

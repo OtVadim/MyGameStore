@@ -1,12 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { ItemsInCart } from "../../components/items-in-cart";
 import { OrderItem } from "../../components/order-item";
 import { calcTotalPrice } from "../../components/utils";
 import './order-page';
 
 export const OrderPage = () => {
-    const items = useSelector(state => state.cart.ItemsInCart)
+    const items = useSelector(state => state.cart.itemsInCart)
 
     if (items.length < 1) {
         return <h1>Ваша корзина пуста</h1>
